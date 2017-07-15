@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.abhinav.lactarianrecipes.MainActivity">
+    <item
+        android:id="@+id/action_find"
+        android:orderInCategory="100"
+        android:title="@string/find"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_include"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        android:title="@string/include"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_exclude"
+        android:icon="@android:drawable/ic_input_delete"
+        android:orderInCategory="100"
+        android:title="@string/exclude"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_saved"
+        android:orderInCategory="100"
+        android:title="@string/saved_recipes"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

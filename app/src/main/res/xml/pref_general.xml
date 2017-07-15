@@ -1,0 +1,15 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="vegan_switch"
+        android:summary="@string/pref_description_vegan"
+        android:title="@string/pref_title_vegan" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="jain_switch"
+        android:summary="@string/pref_description_jain"
+        android:title="@string/pref_title_jain" />
+
+</PreferenceScreen>

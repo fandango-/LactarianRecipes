@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space16"
+        android:layout_marginRight="@dimen/space16"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recipe_title"
+            style="@style/Text22Semi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space24"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/recipe_yield_time"
+            style="@style/Text14Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space8"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space8"
+            android:layout_marginTop="@dimen/space16"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_shoppinglist" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space16"
+            android:text="@string/ingredients"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recipe_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space16"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space8"
+            android:layout_marginTop="@dimen/space16"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_preparation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space16"
+            android:text="@string/preparation"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recipe_preparation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space16"
+            android:layout_marginTop="@dimen/space8"
+            android:background="@null" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
